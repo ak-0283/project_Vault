@@ -29,6 +29,12 @@ npm run dev
 - Theme is stored in `localStorage` under key `pv-theme`.
 - Project cards intentionally only include a **Live project** button.
 
+## 📌 Projects Note
+
+You can view all the projects showcased in this portfolio here:
+
+- 👉 [View my projects on Project Vault](https://projectvault-ten.vercel.app/)
+
 ## Build
 
 ```powershell
