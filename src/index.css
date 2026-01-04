@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design tokens live as CSS variables so Tailwind can reference them.
+  This makes it easy to re-theme the whole site in one place.
+*/
+/* Default theme: dark */
+:root {
+  color-scheme: dark;
+
+  /* Dark glass palette (RGB triplets) */
+  --bg: 9 11 18;
+  --surface: 14 17 26;
+  --surface2: 20 24 36;
+  --text: 238 242 255;
+  --muted: 148 163 184;
+
+  /* Accent duo */
+  --accent: 99 102 241;
+  --accent2: 34 211 238;
+}
+
+/* Light theme overrides */
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: 246 247 251;
+  --surface: 255 255 255;
+  --surface2: 241 245 249;
+  --text: 15 23 42;
+  /* Darker muted text for contrast on light surfaces */
+  --muted: 51 65 85;
+
+  /* Keep accents consistent across themes */
+  --accent: 79 70 229;
+  --accent2: 8 145 178;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text antialiased;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgb(var(--accent) / 0.35);
+  }
+
+  a {
+    @apply text-text/90 underline-offset-4;
+  }
+}
+
+@layer components {
+  /* Shared glass style used across cards/nav */
+  .glass {
+    @apply bg-surface/45 backdrop-blur-xl border border-white/10;
+  }
+
+  /* Light theme needs darker borders and a slightly stronger surface */
+  :root[data-theme='light'] .glass {
+    @apply bg-surface/75 border-black/10;
+  }
+
+  /* Accessible focus style (use as a utility class) */
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+  }
+}

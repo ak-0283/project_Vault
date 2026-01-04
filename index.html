@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Vault | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="A modern developer portfolio featuring selected projects, tech stack, and contact links."
+    />
+    <meta name="theme-color" content="#090B12" />
+
+    <!-- Open Graph / Twitter (basic, no template dependencies) -->
+    <meta property="og:title" content="Project Vault | Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="A modern developer portfolio featuring selected projects, tech stack, and contact links."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og.svg" />
+
+    <!--
+      Theme init (prevents a light/dark flash on load).
+      Uses localStorage first, then falls back to OS preference.
+    -->
+    <script>
+      (() => {
+        try {
+          const key = 'pv-theme'
+          const stored = localStorage.getItem(key)
+          const system = window.matchMedia('(prefers-color-scheme: light)').matches
+            ? 'light'
+            : 'dark'
+          const theme = stored === 'light' || stored === 'dark' ? stored : system
+          document.documentElement.dataset.theme = theme
+        } catch {
+          /* no-op */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
