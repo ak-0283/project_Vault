@@ -46,7 +46,7 @@ export const projects = [
     description:
       'A web application that predicts student performance based on attendance records using AI techniques.',
     stack: ['Python', 'Streamlit', 'Machine Learning'],
-    liveUrl: 'https://ai-attendance-performance-prediction.onrender.com/dataset',
+    liveUrl: 'https://ai-attendance-performance-prediction.onrender.com/',
   },
   {
     title: 'Resume Builder',
