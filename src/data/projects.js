@@ -60,6 +60,6 @@ export const projects = [
     description:
       'A web application that generates confusion matrices for evaluating the performance of classification models in machine learning.',
     stack: ['Python', 'Streamlit', 'Machine Learning'],
-    liveUrl: 'https://confusion-matrix-generator.onrender.com/',
+    liveUrl: 'https://confusion-matrix-generator.vercel.app/',
   },
 ]
