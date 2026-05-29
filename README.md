@@ -1,4 +1,3 @@
-
 # Project Vault — Developer Portfolio
 
 Modern, mobile-first portfolio built with **React (Vite)** + **Tailwind CSS**.
@@ -40,20 +39,20 @@ You can view all the projects showcased in this portfolio here:
 ```powershell
 # Project Vault — Developer Portfolio
 
-Modern, mobile-first portfolio built with **React (Vite)** + **Tailwind CSS**.
+Modern, mobile-first portfolio built with React (Vite) + Tailwind CSS.
 
 ## ✨ Highlights
 
-- 🔗 **Live projects only** (no source-code links)
-- 🌓 **Dark / Light theme** toggle (saved)
-- 🍔 **Mobile hamburger** navigation
-- ⬆️ **Scroll-to-top** button
+- 🔗 Live projects only (no source-code links)
+- 🌓 Dark / Light theme toggle (saved)
+- 🍔 Mobile hamburger navigation
+- ⬆️ Scroll-to-top button
 - 🧊 Dark glassmorphism UI + smooth hover/entrance animations
 
 ## ▶️ Run locally
 
 ```powershell
-Set-Location "c:\Users\91600\OneDrive\Desktop\c c++\project_Vault"
+Set-Location "c:\project_Vault"
 npm install
 npm run dev
 ```
