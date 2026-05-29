@@ -56,10 +56,31 @@ export const projects = [
     liveUrl: 'https://resume-builder-amber-rho.vercel.app/',
   },
   {
-    title: 'Confusion Matrix Generator',
+    title: 'Generator Of Confusion Matrix & Performance Metrics Table',
     description:
-      'A web application that generates confusion matrices for evaluating the performance of classification models in machine learning.',
-    stack: ['Python', 'Streamlit', 'Machine Learning'],
-    liveUrl: 'https://confusion-matrix-generator.vercel.app/',
+      'A web application that generates confusion matrices & performance metrics tables for evaluating the performance of classification models in machine learning.',
+    stack: ['Python', 'Machine Learning'],
+    liveUrl: 'https://ai-tools-hub-app.netlify.app/',
+  },
+  {
+    title: '4th Semester Minor Project',
+    description:
+      'i have made a website that is only frontend for emotion detection. The website allows users to upload images.',
+    stack: ['HTML', 'CSS', 'JavaScript','GitHub'],
+    liveUrl: 'https://minor-project-4th-sem.vercel.app/',
+  },
+  {
+    title: '5th Semester Minor Project',
+    description:
+      'i have made a website that is only frontend for emotion detection. The website allows users to upload images.this is also give prediction of emotion by using machine learning model and deep learning model. i have used flask for backend. The website allows users to upload images and get prediction of emotion by using machine learning model and deep learning model.',
+    stack: ['HTML', 'CSS', 'JavaScript','GitHub', 'Python', 'Flask', 'Machine Learning', 'Deep Learning'],
+    liveUrl: 'https://github.com/ak-0283/Emotion-Detection-Minor-Project',
+  },
+  {
+    title: '6th Semester Minor Project',
+    description:
+      'skin cancer detection using machine learning and deep learning. The website allows users to upload images and get prediction of skin cancer by using machine learning model and deep learning model.',
+    stack: ['HTML', 'CSS', 'JavaScript','GitHub', 'Python', 'Flask', 'Machine Learning', 'Deep Learning','Docker'],
+    liveUrl: 'https://github.com/ak-0283/major-project',
   },
 ]
