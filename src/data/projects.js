@@ -77,10 +77,17 @@ export const projects = [
     liveUrl: 'https://github.com/ak-0283/Emotion-Detection-Minor-Project',
   },
   {
-    title: '6th Semester Minor Project',
+    title: '6th Semester Major Project',
     description:
       'skin cancer detection using machine learning and deep learning. The website allows users to upload images and get prediction of skin cancer by using machine learning model and deep learning model.',
     stack: ['HTML', 'CSS', 'JavaScript','GitHub', 'Python', 'Flask', 'Machine Learning', 'Deep Learning','Docker'],
     liveUrl: 'https://github.com/ak-0283/major-project',
+  },
+  {
+    title: 'Research Figure Studio',
+    description:
+      'A web application that allows users to create and customize research figures for academic publications and presentations.',
+    stack: ['React', 'Vite', 'Tailwind CSS', 'GitHub'],
+    liveUrl: 'https://genuine-cannoli-fe5b58.netlify.app/',
   },
 ]
